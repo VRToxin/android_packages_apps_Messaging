@@ -19,6 +19,7 @@ package com.android.messaging.datamodel;
 import android.app.Notification;
 import android.app.PendingIntent;
 import android.content.Context;
+import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Resources;
@@ -32,6 +33,7 @@ import android.os.Bundle;
 import android.os.SystemClock;
 import android.provider.ContactsContract;
 import android.provider.ContactsContract.Contacts;
+import android.provider.Settings;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.NotificationCompat.WearableExtender;
 import android.support.v4.app.NotificationManagerCompat;
@@ -694,8 +696,13 @@ public class BugleNotifications {
             }
         }
 
+        int smsicon = notificationState.getIcon();
+        if (Settings.System.getInt(context.getContentResolver(),
+            Settings.System.KEY_SMS_BREATH, 0) == 1) {
+             smsicon = notificationState.getBreathIcon();
+        }
         notificationState.mNotificationBuilder
-            .setSmallIcon(notificationState.getIcon())
+            .setSmallIcon(smsicon)
             .setVisibility(NotificationCompat.VISIBILITY_PRIVATE)
             .setColor(context.getResources().getColor(R.color.notification_accent_color))
 //            .setPublicVersion(null)    // TODO: when/if we ever support different
