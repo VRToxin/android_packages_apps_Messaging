@@ -171,4 +171,14 @@
     <color name="fastscroll_preview_text_color">#ffffff</color>
 
     <color name="google_gray">@*android:color/material_grey_900</color>
+
+    <color name="qm_background">#ff000000</color>
+    <color name="qm_fading_edge_color">#ff1976D2</color>
+    <color name="qm_from_text_color">#ffffffff</color>
+    <color name="qm_recv_timestamp_text_color">#ff1976D2</color>
+    <color name="qm_dialog_text_color">#ffffffff</color>
+    <color name="qm_count_color">#ff1976D2</color>
+
+    <color name="outgoing_message_bg">#ff000000</color>
+    <color name="qm_reply">#ff000000</color>
 </resources>
