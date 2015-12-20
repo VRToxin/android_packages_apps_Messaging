@@ -55,7 +55,7 @@
     </style>
 
     <style name="BugleTheme.ConversationListActivity" parent="BugleTheme">
-        <item name="android:windowBackground">@*android:color/material_grey_850</item>
+        <item name="android:windowBackground">@*android:color/material_grey_900</item>
     </style>
 
     <style name="BugleTheme.ArchivedConversationListActivity" parent="BugleTheme.ConversationListActivity">
@@ -302,7 +302,7 @@
     <style name="ComposeMessageViewDraftViewStyle">
         <item name="android:layout_marginLeft">53dp</item>
         <item name="android:layout_marginRight">63dp</item>
-        <item name="android:background">@*android:color/material_grey_850</item>
+        <item name="android:background">@*android:color/material_grey_900</item>
     </style>
 
     <style name="ConversationMessageViewStyle">
