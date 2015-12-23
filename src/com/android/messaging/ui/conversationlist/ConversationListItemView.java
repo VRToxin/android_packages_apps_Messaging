@@ -63,7 +63,7 @@ import com.android.messaging.util.Typefaces;
 import com.android.messaging.util.UiUtils;
 import com.android.messaging.util.UriUtil;
 import com.vrtoxin.messaging.util.PrefsUtils;
-import com.vrtoxin.lookup.phonenumber.response.LookupResponse;
+import com.cyanogen.lookup.phonenumber.response.LookupResponse;
 
 import java.util.List;
 
