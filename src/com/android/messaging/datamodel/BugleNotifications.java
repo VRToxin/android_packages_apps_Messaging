@@ -710,7 +710,7 @@ public class BugleNotifications {
              smsicon = notificationState.getBreathIcon();
         }
         notificationState.mNotificationBuilder
-            .setSmallIcon(smsicon)
+            .setSmallIcon(notificationState.getIcon())
             .setVisibility(NotificationCompat.VISIBILITY_PRIVATE)
             .setColor(context.getResources().getColor(R.color.notification_accent_color))
 //            .setPublicVersion(null)    // TODO: when/if we ever support different
